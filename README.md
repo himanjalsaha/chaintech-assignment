@@ -39,7 +39,8 @@ To run this project locally, follow these steps:
 1. **Clone the repository:**
 
    ```bash
-   git clone <https://github.com/himanjalsaha/chaintech-assignment>
+   git clone https://github.com/himanjalsaha/chaintech-assignment
+
 
 folder structure
 src/
@@ -60,3 +61,21 @@ src/
 │
 ├── App.tsx
 └── index.tsx
+
+
+
+
+Components
+
+    FormInput.tsx: A reusable component for rendering input fields with validation.
+    SubmitButton.tsx: A styled button component for form submission.
+
+Validation
+
+    Validationutils.ts: Contains utility functions for input validation, ensuring that user data is checked for correctness before processing.
+
+Usage
+
+    Users can navigate to the Signup page to create a new account.
+    After successful registration, users can log in via the Login page.
+    The application provides real-time feedback for form inputs.
