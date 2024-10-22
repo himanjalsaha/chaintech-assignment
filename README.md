@@ -138,12 +138,17 @@ try {
 const App: React.FC = () => {
   return (
     
-      
-        } />
-        } />
-         : }
+       <Router>
+      <Routes>
+        <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<Signup />} />
+        <Route
+          path="/user"
+          element={isAuthenticated() ? <Users /> : <Navigate to="/login" replace />}
         />
-        } />
+        <Route path="*" element={<Navigate to="/login" replace />} />
+      </Routes>
+    </Router>
       
     
   );
@@ -197,20 +202,7 @@ const handleLogin = async (e: React.FormEvent) => {
 />
 ```
 
-### Form Layout Structure
-```typescript
 
-  
-    
-      
-        
-          {/* Form content */}
-        
-      
-    
-  
-
-```
 
 ## Best Practices
 
