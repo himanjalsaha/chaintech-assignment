@@ -231,9 +231,7 @@ const handleLogin = async (e: React.FormEvent) => {
 
 1. **Password Management**
    - Implement minimum length requirements for passwords to strengthen security.
-   - Consider adding password strength indicators to guide users in creating secure passwords.
-   - If applicable, hash passwords before storage in a backend system to protect sensitive information.
-
+ 
 2. **Route Protection**
    - Implement proper authentication checks to ensure only authorized users can access protected routes.
    - Use secure session management practices to prevent session hijacking.
